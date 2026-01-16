@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import {
   ArrowRight,
-  Blend,
-  ChartNoAxesColumn,
-  CircleDot,
-  Diamond,
+  Building2,
+  MapPin,
+  Ruler,
+  Sparkles,
 } from "lucide-react";
 
 import { DashedLine } from "@/components/dashed-line";
@@ -13,24 +14,24 @@ import { Button } from "@/components/ui/button";
 
 const features = [
   {
-    title: "Tailored workflows",
-    description: "Track progress across custom issue flows for your team.",
-    icon: CircleDot,
+    title: "Kvadratsmarta planlösningar",
+    description: "Genomtänkta lösningar som maximerar varje kvadratmeter.",
+    icon: Ruler,
   },
   {
-    title: "Cross-team projects",
-    description: "Collaborate across teams and departments.",
-    icon: Blend,
+    title: "Attraktiva lägen",
+    description: "Bostäder på eftertraktade platser i Stockholmsområdet.",
+    icon: MapPin,
   },
   {
-    title: "Milestones",
-    description: "Break projects down into concrete phases.",
-    icon: Diamond,
+    title: "Nyproduktion",
+    description: "Moderna bostäder med hög kvalitet och finish.",
+    icon: Building2,
   },
   {
-    title: "Progress insights",
-    description: "Track scope, velocity, and progress over time.",
-    icon: ChartNoAxesColumn,
+    title: "Unik design",
+    description: "Arkitektritade hem med personlig karaktär.",
+    icon: Sparkles,
   },
 ];
 
@@ -41,32 +42,32 @@ export const Hero = () => {
         {/* Left side - Main content */}
         <div className="flex-1">
           <h1 className="text-foreground max-w-160 text-3xl tracking-tight md:text-4xl lg:text-5xl xl:whitespace-nowrap">
-            Mainline Next.js template
+            Unika bostäder i Stockholm
           </h1>
 
           <p className="text-muted-foreground text-1xl mt-5 md:text-3xl">
-            Mainline is an open-source website template built with shadcn/ui,
-            Tailwind 4 & Next.js
+            Svenska Hem skapar moderna bostäder med kvadratsmarta planlösningar
+            på attraktiva platser i Stockholmsområdet
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4 lg:flex-nowrap">
             <Button asChild>
-              <a href="https://github.com/shadcnblocks/mainline-nextjs-template">
-                Get template
-              </a>
+              <Link href="/contact">
+                Anmäl intresse
+              </Link>
             </Button>
             <Button
               variant="outline"
               className="from-background h-auto gap-2 bg-linear-to-r to-transparent shadow-md"
               asChild
             >
-              <a
-                href="https://shadcnblocks.com"
+              <Link
+                href="/pricing"
                 className="max-w-56 truncate text-start md:max-w-none"
               >
-                Built by shadcnblocks.com
+                Se våra bostäder
                 <ArrowRight className="stroke-3" />
-              </a>
+              </Link>
             </Button>
           </div>
         </div>

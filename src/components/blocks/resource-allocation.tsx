@@ -6,13 +6,13 @@ import { cn } from "@/lib/utils";
 
 const topItems = [
   {
-    title: "Reusable issue templates.",
+    title: "Egen entreprenad.",
     description:
-      "Draft lightning-fast documents with our Smart Instructions and Templates.",
+      "Vi bygger i egen regi vilket ger oss full kontroll över kvalitet och tidsplan.",
     images: [
       {
         src: "/resource-allocation/templates.webp",
-        alt: "Issue template interface",
+        alt: "Byggprocess",
         width: 495,
         height: 186,
       },
@@ -22,37 +22,37 @@ const topItems = [
     fade: [""],
   },
   {
-    title: "Simplify your stack.",
-    description: "No more Confluence, SharePoint, or Microsoft Word.",
+    title: "Familjeägt företag.",
+    description: "Med långsiktig vision och personligt engagemang i varje projekt.",
     images: [
-      { src: "/logos/jira.svg", alt: "Jira logo", width: 48, height: 48 },
-      { src: "/logos/excel.svg", alt: "Excel logo", width: 48, height: 48 },
+      { src: "/logos/jira.svg", alt: "Kvalitet", width: 48, height: 48 },
+      { src: "/logos/excel.svg", alt: "Precision", width: 48, height: 48 },
       {
         src: "/logos/notion.svg",
-        alt: "Notion logo",
+        alt: "Planering",
         width: 48,
         height: 48,
       },
-      { src: "/logos/word.svg", alt: "Word logo", width: 48, height: 48 },
+      { src: "/logos/word.svg", alt: "Dokumentation", width: 48, height: 48 },
       {
         src: "/logos/monday.svg",
-        alt: "Monday logo",
+        alt: "Uppföljning",
         width: 48,
         height: 48,
       },
       {
         src: "/logos/drive.svg",
-        alt: "Google Drive logo",
+        alt: "Samarbete",
         width: 48,
         height: 48,
       },
       {
         src: "/logos/jira.svg",
-        alt: "Jira logo",
+        alt: "Kvalitetssäkring",
         width: 48,
         height: 48,
       },
-      { src: "/logos/asana.svg", alt: "Asana logo", width: 48, height: 48 },
+      { src: "/logos/asana.svg", alt: "Projektledning", width: 48, height: 48 },
     ],
     className:
       "flex-1 [&>.title-container]:mb-5 md:[&>.title-container]:mb-8 md:[&>.title-container]:translate-x-2 xl:[&>.title-container]:translate-x-4 [&>.title-container]:translate-x-0",
@@ -62,13 +62,13 @@ const topItems = [
 
 const bottomItems = [
   {
-    title: "Graveyard it.",
+    title: "Från råmark till nycklar.",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do.",
+      "Vi hanterar hela processen från markförvärv till färdig bostad.",
     images: [
       {
         src: "/resource-allocation/graveyard.webp",
-        alt: "Graveyard interface",
+        alt: "Projektutveckling",
         width: 305,
         height: 280,
       },
@@ -78,13 +78,13 @@ const bottomItems = [
     fade: ["bottom"],
   },
   {
-    title: "Task discussions.",
+    title: "Personlig kontakt.",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
+      "Du har alltid en dedikerad kontaktperson genom hela köpprocessen.",
     images: [
       {
         src: "/resource-allocation/discussions.webp",
-        alt: "Task discussions interface",
+        alt: "Kundkontakt",
         width: 320,
         height: 103,
       },
@@ -94,13 +94,13 @@ const bottomItems = [
     fade: [""],
   },
   {
-    title: "Notifications.",
+    title: "Kvalitetsgaranti.",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
+      "Vi lämnar aldrig över ansvaret förrän du är nöjd med ditt nya hem.",
     images: [
       {
         src: "/resource-allocation/notifications.webp",
-        alt: "Notifications interface",
+        alt: "Kvalitetskontroll",
         width: 305,
         height: 280,
       },
@@ -114,12 +114,12 @@ const bottomItems = [
 export const ResourceAllocation = () => {
   return (
     <section
-      id="resource-allocation"
+      id="varfor-svenska-hem"
       className="overflow-hidden pb-28 lg:pb-32"
     >
       <div className="">
         <h2 className="container text-center text-3xl tracking-tight text-balance sm:text-4xl md:text-5xl lg:text-6xl">
-          Mainline your resource allocation and execution
+          Varför välja Svenska Hem?
         </h2>
 
         <div className="mt-8 md:mt-12 lg:mt-20">

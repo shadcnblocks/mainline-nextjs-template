@@ -10,52 +10,52 @@ import { cn } from "@/lib/utils";
 
 const categories = [
   {
-    title: "Support",
+    title: "Köpprocessen",
     questions: [
       {
-        question: "How do I update my account without breaking my laptop?",
+        question: "Hur går det till att köpa en bostad från Svenska Hem?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Processen börjar med att du anmäler intresse för ett projekt. Du får sedan en personlig kontaktperson som guidar dig genom hela köpet, från visning till kontraktsskrivning och tillträde.",
       },
       {
-        question: "Is support free, or do I need to Google everything?",
+        question: "Kan jag anpassa min lägenhet?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Ja, i tidiga skeden av bygget erbjuder vi ofta möjlighet att välja tillval för kök, badrum och ytskikt. Kontakta oss för att höra vilka alternativ som finns för det projekt du är intresserad av.",
       },
       {
-        question: "Are you going to be subsumed by AI?",
+        question: "När kan jag flytta in?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Inflyttningstid varierar beroende på projekt och byggskede. För pågående projekt anges beräknad inflyttning på respektive projektsida. Vi håller dig informerad under hela byggprocessen.",
       },
     ],
   },
   {
-    title: "Your account",
+    title: "Finansiering",
     questions: [
       {
-        question: "Is support free, or do I need to Google everything?",
+        question: "Vilka finansieringsalternativ finns?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Vi samarbetar med flera ledande banker som SBAB, Skandia och Nordea. De kan hjälpa dig med bolånefinansiering. Vi kan även rekommendera kontakt med våra samarbetspartners.",
       },
       {
-        question: "Are you going to be subsumed by AI?",
+        question: "Behöver jag betala en handpenning?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Ja, vid kontraktsskrivning betalas normalt en handpenning på 10% av köpesumman. Resterande belopp betalas vid tillträde när bostaden är färdigställd.",
       },
     ],
   },
   {
-    title: "Other questions",
+    title: "Om bostäderna",
     questions: [
       {
-        question: "Is support free, or do I need to Google everything?",
+        question: "Vad menas med kvadratsmarta planlösningar?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Det innebär att vi designar våra bostäder för att maximera varje kvadratmeter. Genom smarta lösningar för förvaring, flexibla rum och genomtänkt möblering får du mer nytta av ytan.",
       },
       {
-        question: "Are you going to be subsumed by AI?",
+        question: "Vilken kvalitetsstandard har era bostäder?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Vi bygger i egen regi med hög kvalitetsstandard. Det innebär moderna kök och badrum, energieffektiva lösningar och material av hög kvalitet. Vi lämnar 10 års garanti på våra nyproduktioner.",
       },
     ],
   },
@@ -77,19 +77,19 @@ export const FAQ = ({
           <div className="space-y-4">
             {headerTag === "h1" ? (
               <h1 className="text-2xl tracking-tight md:text-4xl lg:text-5xl">
-                Got Questions?
+                Vanliga frågor
               </h1>
             ) : (
               <h2 className="text-2xl tracking-tight md:text-4xl lg:text-5xl">
-                Got Questions?
+                Vanliga frågor
               </h2>
             )}
             <p className="text-muted-foreground max-w-md leading-snug lg:mx-auto">
-              If you can't find what you're looking for,{" "}
+              Hittar du inte svaret du söker?{" "}
               <Link href="/contact" className="underline underline-offset-4">
-                get in touch
-              </Link>
-              .
+                Kontakta oss
+              </Link>{" "}
+              så hjälper vi dig.
             </p>
           </div>
 
