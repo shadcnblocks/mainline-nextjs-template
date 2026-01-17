@@ -16,70 +16,70 @@ type Company = {
 export const Logos = () => {
   const topRowCompanies = [
     {
-      name: "Mercury",
+      name: "SBAB",
       logo: "/logos/mercury.svg",
       width: 143,
       height: 26,
-      href: "https://mercury.com",
+      href: "https://sbab.se",
     },
     {
-      name: "Watershed",
+      name: "Skandia",
       logo: "/logos/watershed.svg",
       width: 154,
       height: 31,
-      href: "https://watershed.com",
+      href: "https://skandia.se",
     },
     {
-      name: "Retool",
+      name: "Länsförsäkringar",
       logo: "/logos/retool.svg",
       width: 113,
       height: 22,
-      href: "https://retool.com",
+      href: "https://lansforsakringar.se",
     },
     {
-      name: "Descript",
+      name: "Nordea",
       logo: "/logos/descript.svg",
       width: 112,
       height: 27,
-      href: "https://descript.com",
+      href: "https://nordea.se",
     },
   ];
 
   const bottomRowCompanies = [
     {
-      name: "Perplexity",
+      name: "SEB",
       logo: "/logos/perplexity.svg",
       width: 141,
       height: 32,
-      href: "https://perplexity.com",
+      href: "https://seb.se",
     },
     {
-      name: "Monzo",
+      name: "Swedbank",
       logo: "/logos/monzo.svg",
       width: 104,
       height: 18,
-      href: "https://monzo.com",
+      href: "https://swedbank.se",
     },
     {
-      name: "Ramp",
+      name: "Handelsbanken",
       logo: "/logos/ramp.svg",
       width: 105,
       height: 28,
-      href: "https://ramp.com",
+      href: "https://handelsbanken.se",
     },
     {
-      name: "Raycast",
+      name: "Hemnet",
       logo: "/logos/raycast.svg",
       width: 128,
       height: 33,
-      href: "https://raycast.com",
+      href: "https://hemnet.se",
     },
     {
-      name: "Arc",
+      name: "Mäklarsamfundet",
       logo: "/logos/arc.svg",
       width: 90,
       height: 28,
-      href: "https://arc.com",
+      href: "https://maklarsamfundet.se",
     },
   ];
 
@@ -88,10 +88,10 @@ export const Logos = () => {
       <div className="container space-y-10 lg:space-y-16">
         <div className="text-center">
           <h2 className="mb-4 text-xl text-balance md:text-2xl lg:text-3xl">
-            Powering the world's best product teams.
+            Samarbetspartners vi litar på.
             <br className="max-md:hidden" />
             <span className="text-muted-foreground">
-              From next-gen startups to established enterprises.
+              Ledande aktörer inom bank, försäkring och fastigheter.
             </span>
           </h2>
         </div>

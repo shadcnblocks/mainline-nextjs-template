@@ -18,15 +18,15 @@ const About = () => {
         />
 
         <TextSection
-          title="The team"
+          title="Vårt arbetssätt"
           paragraphs={[
-            "We started building Mainline in 2019 and launched in 2022. Every endpoint has been designed from the ground up — with no technical debt or legacy systems. We are purpose-built to power project management innovation for the next hundred years.",
-            "We are 100% founder and team-owned, profitable, and we keep our team lean. Over time, this page will become more polished, but for now, we're focused on delivering for developers.",
-            "If you're interested in building the future of PM, check out our open roles below.",
+            "Svenska Hem har för närvarande ett 10-tal projekt i olika skeden där vi erhållit markanvisningar runtom i Sverige. Varje projekt drivs med samma höga ambition och engagemang.",
+            "Vi är ett familjeägt företag som tror på långsiktiga relationer. Det innebär att vi aldrig kompromissar med kvaliteten för kortsiktig vinst. Din nya bostad är en investering för livet.",
+            "Vill du veta mer om våra pågående och kommande projekt? Kontakta oss för mer information.",
           ]}
           ctaButton={{
-            href: "/careers",
-            text: "View open roles",
+            href: "/contact",
+            text: "Kontakta oss",
           }}
         />
       </div>
@@ -35,8 +35,8 @@ const About = () => {
       <div className="flex flex-col gap-8 lg:gap-16 xl:gap-20">
         <TextSection
           paragraphs={[
-            "At Mainline, we are dedicated to transforming the way teams plan, execute, and deliver projects. Our mission is to provide our customers with an unbeatable edge over delays, inefficiencies, and disorganisation through actionable insights and seamless collaboration. We'll stop at nothing to give you the tools you need to get every project across the finish line.",
-            "We're customer-obsessed — investing the time to understand every aspect of your workflow so that we can help you operate better than ever before. We're all in this together because your success is our success. In our history as a company, we've never lost a customer, because when your projects succeed, so do we.",
+            "Hos Svenska Hem är vi dedikerade till att skapa bostäder som människor älskar att bo i. Vår mission är att leverera hem med genomtänkta planlösningar, hög kvalitet och på attraktiva platser i Stockholmsområdet.",
+            "Vi tror på personlig service genom hela processen. Från första intresseanmälan till inflyttningsdagen har du en dedikerad kontaktperson som guidar dig. Din trygghet är vår prioritet, och vi lämnar aldrig över ansvaret förrän du är nöjd med ditt nya hem.",
           ]}
         />
         <ImageSection

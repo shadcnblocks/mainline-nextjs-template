@@ -1,30 +1,30 @@
-import Image from "next/image";
+import { Award, Building2, Heart, Shield, Users } from "lucide-react";
 
-const investors = [
+const values = [
   {
-    name: "Dennis Bouvard",
-    company: "Blackbird Ventures",
-    image: "/investors/1.webp",
+    name: "Kvalitet",
+    description: "Vi kompromissar aldrig med materialen eller utförandet",
+    icon: Award,
   },
   {
-    name: "Renatus Gerard",
-    company: "Center Studies",
-    image: "/investors/2.webp",
+    name: "Helhetstänk",
+    description: "Från markförvärv till inflyttning i egen regi",
+    icon: Building2,
   },
   {
-    name: "Leslie Alexander",
-    company: "TechNexus",
-    image: "/investors/3.webp",
+    name: "Långsiktighet",
+    description: "Familjeägt företag med fokus på varaktiga relationer",
+    icon: Heart,
   },
   {
-    name: "Matthew Stephens",
-    company: "Etymol Cap",
-    image: "/investors/4.webp",
+    name: "Trygghet",
+    description: "Personlig kontakt och garanti genom hela processen",
+    icon: Shield,
   },
   {
-    name: "Josephine Newman",
-    company: "Vandenberg",
-    image: "/investors/5.webp",
+    name: "Kundnöjdhet",
+    description: "Vi lämnar inte över förrän du är helt nöjd",
+    icon: Users,
   },
 ];
 
@@ -32,22 +32,21 @@ export function Investors() {
   return (
     <section className="container max-w-5xl py-12">
       <h2 className="text-foreground text-4xl font-medium tracking-wide">
-        Our investors
+        Våra värderingar
       </h2>
-      <div className="mt-8 grid grid-cols-2 gap-12 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-        {investors.map((investor) => (
-          <div key={investor.name} className="">
-            <Image
-              src={investor.image}
-              alt={investor.name}
-              width={120}
-              height={120}
-              className="object-cover"
-            />
-            <h3 className="mt-3 font-semibold">{investor.name}</h3>
-            <p className="text-muted-foreground">{investor.company}</p>
-          </div>
-        ))}
+      <div className="mt-8 grid grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+        {values.map((value) => {
+          const Icon = value.icon;
+          return (
+            <div key={value.name} className="space-y-3">
+              <div className="bg-muted inline-flex rounded-xl p-3">
+                <Icon className="size-8 text-foreground" />
+              </div>
+              <h3 className="font-semibold">{value.name}</h3>
+              <p className="text-muted-foreground text-sm">{value.description}</p>
+            </div>
+          );
+        })}
       </div>
     </section>
   );

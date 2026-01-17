@@ -17,59 +17,59 @@ import { cn } from "@/lib/utils";
 
 const items = [
   {
-    quote: "We're misusing Mainline as a CRM and it still works!",
-    author: "Amy Chase",
-    role: "PM",
-    company: "Mercury Finance",
+    quote: "Fantastisk service från första kontakt till inflyttning. Verkligen en trygg process!",
+    author: "Anna Lindqvist",
+    role: "Bostadsköpare",
+    company: "Slakthus Ett",
     image: "/testimonials/amy-chase.webp",
   },
   {
-    quote: "I was able to replace 80% of my team with Mainline bots.",
-    author: "Jonas Kotara",
-    role: "Lead Engineer",
-    company: "Mercury Finance",
+    quote: "Planlösningen är så genomtänkt. Varje kvadratmeter är maximalt utnyttjad.",
+    author: "Erik Johansson",
+    role: "Bostadsköpare",
+    company: "Bromma",
     image: "/testimonials/jonas-kotara.webp",
   },
   {
-    quote: "Founder Mode is hard enough without having a really nice PM app.",
-    author: "Kevin Yam",
-    role: "Founder",
-    company: "Mercury Finance",
+    quote: "Vi hade en dedikerad kontaktperson hela vägen. Det gjorde köpet så enkelt.",
+    author: "Maria Svensson",
+    role: "Bostadsköpare",
+    company: "Järfälla",
     image: "/testimonials/kevin-yam.webp",
   },
   {
-    quote: "I can use the tool as a substitute from my PM.",
-    author: "Kundo Marta",
-    role: "Founder",
-    company: "Mercury Finance",
+    quote: "Kvaliteten på materialen och finishen överträffade våra förväntningar.",
+    author: "Johan Bergström",
+    role: "Bostadsköpare",
+    company: "Slakthus Ett",
     image: "/testimonials/kundo-marta.webp",
   },
   {
-    quote: "We're misusing Mainline as a CRM and it still works!",
-    author: "Amy Chase",
-    role: "PM",
-    company: "Mercury Finance",
+    quote: "Fantastisk service från första kontakt till inflyttning. Verkligen en trygg process!",
+    author: "Anna Lindqvist",
+    role: "Bostadsköpare",
+    company: "Slakthus Ett",
     image: "/testimonials/amy-chase.webp",
   },
   {
-    quote: "I was able to replace 80% of my team with Mainline bots.",
-    author: "Jonas Kotara",
-    role: "Lead Engineer",
-    company: "Mercury Finance",
+    quote: "Planlösningen är så genomtänkt. Varje kvadratmeter är maximalt utnyttjad.",
+    author: "Erik Johansson",
+    role: "Bostadsköpare",
+    company: "Bromma",
     image: "/testimonials/jonas-kotara.webp",
   },
   {
-    quote: "Founder Mode is hard enough without having a really nice PM app.",
-    author: "Kevin Yam",
-    role: "Founder",
-    company: "Mercury Finance",
+    quote: "Vi hade en dedikerad kontaktperson hela vägen. Det gjorde köpet så enkelt.",
+    author: "Maria Svensson",
+    role: "Bostadsköpare",
+    company: "Järfälla",
     image: "/testimonials/kevin-yam.webp",
   },
   {
-    quote: "I can use the tool as a substitute from my PM.",
-    author: "Kundo Marta",
-    role: "Founder",
-    company: "Mercury Finance",
+    quote: "Kvaliteten på materialen och finishen överträffade våra förväntningar.",
+    author: "Johan Bergström",
+    role: "Bostadsköpare",
+    company: "Slakthus Ett",
     image: "/testimonials/kundo-marta.webp",
   },
 ];
@@ -87,15 +87,14 @@ export const Testimonials = ({
         <div className="container">
           <div className="space-y-4">
             <h2 className="text-2xl tracking-tight md:text-4xl lg:text-5xl">
-              Trusted by product builders
+              Nöjda boende berättar
             </h2>
             <p className="text-muted-foreground max-w-md leading-snug">
-              Mainline is built on the habits that make the best product teams
-              successful: staying focused, moving quickly, and always aiming for
-              high-quality work.
+              Vi är stolta över att ha hjälpt hundratals familjer att hitta
+              sitt drömboende. Läs vad våra boende tycker om sina nya hem.
             </p>
             <Button variant="outline" className="shadow-md">
-              Read our Customer Stories <ArrowRight className="size-4" />
+              Läs fler berättelser <ArrowRight className="size-4" />
             </Button>
           </div>
 

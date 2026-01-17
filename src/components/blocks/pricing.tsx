@@ -1,114 +1,106 @@
 "use client";
 
-import { useState } from "react";
+import Link from "next/link";
 
-import { Check } from "lucide-react";
+import { Check, MapPin } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Switch } from "@/components/ui/switch";
 import { cn } from "@/lib/utils";
 
-const plans = [
+const projects = [
   {
-    name: "Free",
-    monthlyPrice: "$0",
-    yearlyPrice: "$0",
-    description: "Free for everyone",
+    name: "Slakthus Ett",
+    location: "Johanneshov, Stockholm",
+    status: "Pågående",
+    description: "5 arkitektritade hus i bostadsrättsform",
     features: [
-      "Unlimited members",
-      "2 teams",
-      "500 issues",
-      "Slack and Github integrations",
+      "Studiolägenheter till paradvåningar",
+      "Balkong eller terrass",
+      "Gemensam takterrass",
+      "Nära Avicii Arena",
     ],
+    highlighted: true,
   },
   {
-    name: "Startup",
-    monthlyPrice: "$8",
-    yearlyPrice: "$6",
+    name: "Ormbacka",
+    location: "Järfälla",
+    status: "Kommande",
+    description: "44 bostäder med inflyttning 2026",
     features: [
-      "All free plan features and...",
-      "Mainline AI",
-      "Unlimited teams",
-      "Unlimited issues and file uploads",
-      "Mainline Insights",
-      "Admin roles",
+      "Moderna planlösningar",
+      "Naturnära läge",
+      "Goda kommunikationer",
+      "Familjevänligt område",
     ],
+    highlighted: false,
   },
   {
-    name: "Enterprise",
-    monthlyPrice: "$8",
-    yearlyPrice: "$6",
+    name: "Bromma Projekt",
+    location: "Bromma, Stockholm",
+    status: "Planering",
+    description: "Nyproduktion i attraktivt läge",
     features: [
-      "All free plan features and...",
-      "Mainline AI",
-      "Supermainline AGI",
-      "Free daily catered lunch",
-      "random HIPPA audits",
+      "Smarta kvadratmeter",
+      "Hög kvalitetsstandard",
+      "Nära till service",
+      "Egen entreprenad",
     ],
+    highlighted: false,
   },
 ];
 
 export const Pricing = ({ className }: { className?: string }) => {
-  const [isAnnual, setIsAnnual] = useState(true);
-
   return (
     <section className={cn("py-28 lg:py-32", className)}>
       <div className="container max-w-5xl">
         <div className="space-y-4 text-center">
           <h2 className="text-2xl tracking-tight md:text-4xl lg:text-5xl">
-            Pricing
+            Våra bostadsprojekt
           </h2>
           <p className="text-muted-foreground mx-auto max-w-xl leading-snug text-balance">
-            Use Mainline for free with your whole team. Upgrade to enable
-            unlimited issues, enhanced security controls, and additional
-            features.
+            Upptäck våra pågående och kommande bostadsprojekt i Stockholmsområdet.
+            Alla med kvadratsmarta planlösningar och hög kvalitet.
           </p>
         </div>
 
         <div className="mt-8 grid items-start gap-5 text-start md:mt-12 md:grid-cols-3 lg:mt-20">
-          {plans.map((plan) => (
+          {projects.map((project) => (
             <Card
-              key={plan.name}
+              key={project.name}
               className={`${
-                plan.name === "Startup"
+                project.highlighted
                   ? "outline-primary origin-top outline-4"
                   : ""
               }`}
             >
               <CardContent className="flex flex-col gap-7 px-6 py-5">
                 <div className="space-y-2">
-                  <h3 className="text-foreground font-semibold">{plan.name}</h3>
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-foreground font-semibold">{project.name}</h3>
+                    <span className={cn(
+                      "text-xs font-medium px-2 py-1 rounded-full",
+                      project.status === "Pågående" && "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200",
+                      project.status === "Kommande" && "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200",
+                      project.status === "Planering" && "bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200"
+                    )}>
+                      {project.status}
+                    </span>
+                  </div>
                   <div className="space-y-1">
-                    <div className="text-muted-foreground text-lg font-medium">
-                      {isAnnual ? plan.yearlyPrice : plan.monthlyPrice}{" "}
-                      {plan.name !== "Free" && (
-                        <span className="text-muted-foreground">
-                          per user/
-                          {isAnnual ? "year" : "month"}
-                        </span>
-                      )}
+                    <div className="text-muted-foreground flex items-center gap-1.5 text-sm">
+                      <MapPin className="size-4" />
+                      {project.location}
                     </div>
                   </div>
                 </div>
 
-                {plan.name !== "Free" ? (
-                  <div className="flex items-center gap-2">
-                    <Switch
-                      checked={isAnnual}
-                      onCheckedChange={() => setIsAnnual(!isAnnual)}
-                      aria-label="Toggle annual billing"
-                    />
-                    <span className="text-sm font-medium">Billed annually</span>
-                  </div>
-                ) : (
-                  <span className="text-muted-foreground text-sm">
-                    {plan.description}
-                  </span>
-                )}
+                <span className="text-muted-foreground text-sm">
+                  {project.description}
+                </span>
 
                 <div className="space-y-3">
-                  {plan.features.map((feature) => (
+                  {project.features.map((feature) => (
                     <div
                       key={feature}
                       className="text-muted-foreground flex items-center gap-1.5"
@@ -121,9 +113,12 @@ export const Pricing = ({ className }: { className?: string }) => {
 
                 <Button
                   className="w-fit"
-                  variant={plan.name === "Startup" ? "default" : "outline"}
+                  variant={project.highlighted ? "default" : "outline"}
+                  asChild
                 >
-                  Get started
+                  <Link href="/contact">
+                    Anmäl intresse
+                  </Link>
                 </Button>
               </CardContent>
             </Card>

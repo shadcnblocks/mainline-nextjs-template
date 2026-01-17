@@ -79,10 +79,10 @@ export function ContactForm() {
             <Check className="size-8" />
           </motion.div>
           <h2 className="mb-2 text-center text-2xl font-bold text-pretty">
-            Thank you
+            Tack för ditt meddelande
           </h2>
           <p className="text-muted-foreground text-center text-lg text-pretty">
-            Form submitted successfully, we will get back to you soon
+            Vi har mottagit din intresseanmälan och återkommer inom kort
           </p>
         </motion.div>
       </div>
@@ -101,7 +101,7 @@ export function ContactForm() {
           rules={{ required: true }}
           render={({ field }) => (
             <FormItem className="w-full">
-              <FormLabel>Full name * </FormLabel>
+              <FormLabel>Namn * </FormLabel>
               <FormControl>
                 <Input
                   type="text"
@@ -110,7 +110,7 @@ export function ContactForm() {
                     const val = e.target.value;
                     field.onChange(val);
                   }}
-                  placeholder="First and last name"
+                  placeholder="För- och efternamn"
                 />
               </FormControl>
 
@@ -124,7 +124,7 @@ export function ContactForm() {
           rules={{ required: true }}
           render={({ field }) => (
             <FormItem className="w-full">
-              <FormLabel>Email address * </FormLabel>
+              <FormLabel>E-postadress * </FormLabel>
               <FormControl>
                 <Input
                   type="text"
@@ -133,7 +133,7 @@ export function ContactForm() {
                     const val = e.target.value;
                     field.onChange(val);
                   }}
-                  placeholder="me@company.com"
+                  placeholder="namn@exempel.se"
                 />
               </FormControl>
 
@@ -147,7 +147,7 @@ export function ContactForm() {
           rules={{ required: false }}
           render={({ field }) => (
             <FormItem className="w-full">
-              <FormLabel>Company name </FormLabel>
+              <FormLabel>Telefonnummer </FormLabel>
               <FormControl>
                 <Input
                   type="text"
@@ -156,7 +156,7 @@ export function ContactForm() {
                     const val = e.target.value;
                     field.onChange(val);
                   }}
-                  placeholder="Company name"
+                  placeholder="07X-XXX XX XX"
                 />
               </FormControl>
 
@@ -171,18 +171,18 @@ export function ContactForm() {
           name="employees"
           render={({ field }) => {
             const options = [
-              { value: "1", label: "1" },
-              { value: "2-10", label: "2-10" },
-              { value: "11-50", label: "11-50" },
-              { value: "51-500", label: "51-500" },
+              { value: "slakthus-ett", label: "Slakthus Ett" },
+              { value: "ormbacka", label: "Ormbacka" },
+              { value: "bromma", label: "Bromma Projekt" },
+              { value: "annat", label: "Annat / Generell förfrågan" },
             ];
             return (
               <FormItem className="w-full">
-                <FormLabel>Number of employees </FormLabel>
+                <FormLabel>Intresserad av projekt </FormLabel>
                 <Select onValueChange={field.onChange} value={field.value}>
                   <FormControl>
                     <SelectTrigger className="w-full">
-                      <SelectValue placeholder="e.g. 11-50" />
+                      <SelectValue placeholder="Välj projekt" />
                     </SelectTrigger>
                   </FormControl>
                   <SelectContent>
@@ -206,11 +206,11 @@ export function ContactForm() {
           rules={{ required: true }}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Your message * </FormLabel>
+              <FormLabel>Meddelande * </FormLabel>
               <FormControl>
                 <Textarea
                   {...field}
-                  placeholder="Write your message"
+                  placeholder="Berätta vad du söker, t.ex. storlek, önskemål..."
                   className="resize-none"
                 />
               </FormControl>
@@ -233,7 +233,7 @@ export function ContactForm() {
                 />
               </FormControl>
               <div className="space-y-1 leading-none">
-                <FormLabel>I agree to the terms and conditions</FormLabel>
+                <FormLabel>Jag godkänner att Svenska Hem kontaktar mig</FormLabel>
 
                 <FormMessage />
               </div>
@@ -242,7 +242,7 @@ export function ContactForm() {
         />
         <div className="flex w-full items-center justify-end pt-3">
           <Button className="rounded-lg" size="sm">
-            {isExecuting ? "Submitting..." : "Submit"}
+            {isExecuting ? "Skickar..." : "Skicka"}
           </Button>
         </div>
       </form>

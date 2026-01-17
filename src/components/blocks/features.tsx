@@ -9,40 +9,40 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const items = [
   {
-    title: "Purpose-built for product development",
+    title: "Bostadsrätter med smarta planlösningar",
     image: "/features/triage-card.svg",
   },
   {
-    title: "Manage projects end-to-end",
+    title: "Hyresrätter i attraktiva lägen",
     image: "/features/cycle-card.svg",
   },
   {
-    title: "Build momentum and healthy habits",
+    title: "Fastighetsutveckling från grunden",
     image: "/features/overview-card.svg",
   },
 ];
 
 export const Features = () => {
   return (
-    <section id="feature-modern-teams" className="pb-28 lg:pb-32">
+    <section id="pagaende-projekt" className="pb-28 lg:pb-32">
       <div className="container">
         {/* Top dashed line with text */}
         <div className="relative flex items-center justify-center">
           <DashedLine className="text-muted-foreground" />
           <span className="bg-muted text-muted-foreground absolute px-3 font-mono text-sm font-medium tracking-wide max-md:hidden">
-            MEASURE TWICE. CUT ONCE.
+            KVALITET I VARJE DETALJ
           </span>
         </div>
 
         {/* Content */}
         <div className="mx-auto mt-10 grid max-w-4xl items-center gap-3 md:gap-0 lg:mt-24 lg:grid-cols-2">
           <h2 className="text-2xl tracking-tight md:text-4xl lg:text-5xl">
-            Made for modern product teams
+            Våra bostadskoncept
           </h2>
           <p className="text-muted-foreground leading-snug">
-            Mainline is built on the habits that make the best product teams
-            successful: staying focused, moving quickly, and always aiming for
-            high-quality work.
+            Svenska Hem utvecklar och bygger bostäder med fokus på kvalitet,
+            smarta planlösningar och långsiktigt ansvar. Vi följer varje projekt
+            från första spadtaget till inflyttning.
           </p>
         </div>
 
