@@ -17,59 +17,59 @@ import { cn } from "@/lib/utils";
 
 const items = [
   {
-    quote: "We're misusing Mainline as a CRM and it still works!",
-    author: "Amy Chase",
-    role: "PM",
-    company: "Mercury Finance",
+    quote: "Planlösningen gör att vår tvåa känns mycket större än den är. Varje hörn är genomtänkt.",
+    author: "Maria Lindqvist",
+    role: "Hyresgäst sedan 2019",
+    company: "Södermalm, Stockholm",
     image: "/testimonials/amy-chase.webp",
   },
   {
-    quote: "I was able to replace 80% of my team with Mainline bots.",
-    author: "Jonas Kotara",
-    role: "Lead Engineer",
-    company: "Mercury Finance",
+    quote: "Servicen är personlig och snabb. Man märker att det är ett familjeföretag som bryr sig.",
+    author: "Erik Johansson",
+    role: "Hyresgäst sedan 2015",
+    company: "Hammarby Sjöstad",
     image: "/testimonials/jonas-kotara.webp",
   },
   {
-    quote: "Founder Mode is hard enough without having a really nice PM app.",
-    author: "Kevin Yam",
-    role: "Founder",
-    company: "Mercury Finance",
+    quote: "Kvaliteten på materialen är fantastisk. Köket känns lika nytt som när vi flyttade in.",
+    author: "Anna Bergström",
+    role: "Hyresgäst sedan 2018",
+    company: "Bromma, Stockholm",
     image: "/testimonials/kevin-yam.webp",
   },
   {
-    quote: "I can use the tool as a substitute from my PM.",
-    author: "Kundo Marta",
-    role: "Founder",
-    company: "Mercury Finance",
+    quote: "Bästa beslutet vi gjorde var att köpa lägenhet från Svenska Hem. Professionellt hela vägen.",
+    author: "Johan Andersson",
+    role: "Bostadsägare sedan 2020",
+    company: "Nacka, Stockholm",
     image: "/testimonials/kundo-marta.webp",
   },
   {
-    quote: "We're misusing Mainline as a CRM and it still works!",
-    author: "Amy Chase",
-    role: "PM",
-    company: "Mercury Finance",
+    quote: "Ljusinsläppet och de smarta förvaringslösningarna gör hela skillnaden i vardagen.",
+    author: "Lisa Eklund",
+    role: "Hyresgäst sedan 2021",
+    company: "Solna, Stockholm",
     image: "/testimonials/amy-chase.webp",
   },
   {
-    quote: "I was able to replace 80% of my team with Mainline bots.",
-    author: "Jonas Kotara",
-    role: "Lead Engineer",
-    company: "Mercury Finance",
+    quote: "Som barnfamilj uppskattar vi verkligen de trygga innergårdarna och gemensamma utrymmena.",
+    author: "Marcus Nilsson",
+    role: "Hyresgäst sedan 2017",
+    company: "Sundbyberg, Stockholm",
     image: "/testimonials/jonas-kotara.webp",
   },
   {
-    quote: "Founder Mode is hard enough without having a really nice PM app.",
-    author: "Kevin Yam",
-    role: "Founder",
-    company: "Mercury Finance",
+    quote: "Felanmälan hanteras alltid snabbt och smidigt. Helt klart bästa hyresvärden jag haft.",
+    author: "Sara Holm",
+    role: "Hyresgäst sedan 2016",
+    company: "Kungsholmen, Stockholm",
     image: "/testimonials/kevin-yam.webp",
   },
   {
-    quote: "I can use the tool as a substitute from my PM.",
-    author: "Kundo Marta",
-    role: "Founder",
-    company: "Mercury Finance",
+    quote: "Energieffektiviteten märks på elräkningen. Smart byggt från grunden.",
+    author: "Per Svensson",
+    role: "Bostadsägare sedan 2022",
+    company: "Täby, Stockholm",
     image: "/testimonials/kundo-marta.webp",
   },
 ];
@@ -87,15 +87,14 @@ export const Testimonials = ({
         <div className="container">
           <div className="space-y-4">
             <h2 className="text-2xl tracking-tight md:text-4xl lg:text-5xl">
-              Trusted by product builders
+              Nöjda boende berättar
             </h2>
             <p className="text-muted-foreground max-w-md leading-snug">
-              Mainline is built on the habits that make the best product teams
-              successful: staying focused, moving quickly, and always aiming for
-              high-quality work.
+              Våra hyresgäster och köpare uppskattar genomtänkta lösningar och
+              service med personligt engagemang.
             </p>
             <Button variant="outline" className="shadow-md">
-              Read our Customer Stories <ArrowRight className="size-4" />
+              Läs fler berättelser <ArrowRight className="size-4" />
             </Button>
           </div>
 

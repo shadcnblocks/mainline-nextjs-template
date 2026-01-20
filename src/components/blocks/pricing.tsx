@@ -1,68 +1,63 @@
 "use client";
 
-import { useState } from "react";
-
 import { Check } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Switch } from "@/components/ui/switch";
 import { cn } from "@/lib/utils";
 
 const plans = [
   {
-    name: "Free",
-    monthlyPrice: "$0",
-    yearlyPrice: "$0",
-    description: "Free for everyone",
+    name: "Hyresrätter",
+    monthlyPrice: "",
+    yearlyPrice: "",
+    description: "Moderna hyresrätter i Stockholm",
     features: [
-      "Unlimited members",
-      "2 teams",
-      "500 issues",
-      "Slack and Github integrations",
+      "Kvadratsmarta planlösningar",
+      "Centrala lägen i Stockholm",
+      "Personlig förvaltning",
+      "Snabb och smidig service",
     ],
   },
   {
-    name: "Startup",
-    monthlyPrice: "$8",
-    yearlyPrice: "$6",
+    name: "Bostadsrätter",
+    monthlyPrice: "",
+    yearlyPrice: "",
+    description: "Nyproducerade bostadsrätter",
     features: [
-      "All free plan features and...",
-      "Mainline AI",
-      "Unlimited teams",
-      "Unlimited issues and file uploads",
-      "Mainline Insights",
-      "Admin roles",
+      "Högkvalitativa material",
+      "Energieffektiva byggnader",
+      "Genomtänkta gemensamma ytor",
+      "Välplanerade balkonger och uteplatser",
+      "Attraktiva lägen",
+      "Professionell säljprocess",
     ],
   },
   {
-    name: "Enterprise",
-    monthlyPrice: "$8",
-    yearlyPrice: "$6",
+    name: "Lokaler",
+    monthlyPrice: "",
+    yearlyPrice: "",
+    description: "Kommersiella lokaler",
     features: [
-      "All free plan features and...",
-      "Mainline AI",
-      "Supermainline AGI",
-      "Free daily catered lunch",
-      "random HIPPA audits",
+      "Flexibla planlösningar",
+      "Centrala lägen",
+      "Anpassning efter behov",
+      "Långsiktiga samarbeten",
     ],
   },
 ];
 
 export const Pricing = ({ className }: { className?: string }) => {
-  const [isAnnual, setIsAnnual] = useState(true);
-
   return (
     <section className={cn("py-28 lg:py-32", className)}>
       <div className="container max-w-5xl">
         <div className="space-y-4 text-center">
           <h2 className="text-2xl tracking-tight md:text-4xl lg:text-5xl">
-            Pricing
+            Våra boenden
           </h2>
           <p className="text-muted-foreground mx-auto max-w-xl leading-snug text-balance">
-            Use Mainline for free with your whole team. Upgrade to enable
-            unlimited issues, enhanced security controls, and additional
-            features.
+            Svenska Hem erbjuder hyresrätter, bostadsrätter och kommersiella
+            lokaler i attraktiva lägen runt om i Stockholmsområdet.
           </p>
         </div>
 
@@ -71,41 +66,18 @@ export const Pricing = ({ className }: { className?: string }) => {
             <Card
               key={plan.name}
               className={`${
-                plan.name === "Startup"
+                plan.name === "Bostadsrätter"
                   ? "outline-primary origin-top outline-4"
                   : ""
               }`}
             >
               <CardContent className="flex flex-col gap-7 px-6 py-5">
                 <div className="space-y-2">
-                  <h3 className="text-foreground font-semibold">{plan.name}</h3>
-                  <div className="space-y-1">
-                    <div className="text-muted-foreground text-lg font-medium">
-                      {isAnnual ? plan.yearlyPrice : plan.monthlyPrice}{" "}
-                      {plan.name !== "Free" && (
-                        <span className="text-muted-foreground">
-                          per user/
-                          {isAnnual ? "year" : "month"}
-                        </span>
-                      )}
-                    </div>
-                  </div>
-                </div>
-
-                {plan.name !== "Free" ? (
-                  <div className="flex items-center gap-2">
-                    <Switch
-                      checked={isAnnual}
-                      onCheckedChange={() => setIsAnnual(!isAnnual)}
-                      aria-label="Toggle annual billing"
-                    />
-                    <span className="text-sm font-medium">Billed annually</span>
-                  </div>
-                ) : (
+                  <h3 className="text-foreground text-xl font-semibold">{plan.name}</h3>
                   <span className="text-muted-foreground text-sm">
                     {plan.description}
                   </span>
-                )}
+                </div>
 
                 <div className="space-y-3">
                   {plan.features.map((feature) => (
@@ -121,9 +93,9 @@ export const Pricing = ({ className }: { className?: string }) => {
 
                 <Button
                   className="w-fit"
-                  variant={plan.name === "Startup" ? "default" : "outline"}
+                  variant={plan.name === "Bostadsrätter" ? "default" : "outline"}
                 >
-                  Get started
+                  Läs mer
                 </Button>
               </CardContent>
             </Card>
