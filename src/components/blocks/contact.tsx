@@ -2,59 +2,59 @@ import React from "react";
 
 import Link from "next/link";
 
-import { Facebook, Linkedin, Twitter } from "lucide-react";
+import { Instagram, Linkedin, Phone } from "lucide-react";
 
 import { ContactForm } from "@/components/blocks/contact-form";
 import { DashedLine } from "@/components/dashed-line";
 
 const contactInfo = [
   {
-    title: "Corporate office",
+    title: "Huvudkontor",
     content: (
       <p className="text-muted-foreground mt-3">
-        1 Carlsberg Close
+        Strandvägen 123
         <br />
-        1260 Hillview, Australia
+        114 56 Stockholm
       </p>
     ),
   },
   {
-    title: "Email us",
+    title: "Kontakta oss",
     content: (
       <div className="mt-3">
         <div>
-          <p className="">Careers</p>
+          <p className="">Uthyrning</p>
           <Link
-            href="mailto:careers@example.com"
+            href="mailto:uthyrning@svh.se"
             className="text-muted-foreground hover:text-foreground"
           >
-            careers@example.com
+            uthyrning@svh.se
           </Link>
         </div>
         <div className="mt-1">
-          <p className="">Press</p>
+          <p className="">Felanmälan</p>
           <Link
-            href="mailto:press@example.com"
+            href="mailto:felanmalan@svh.se"
             className="text-muted-foreground hover:text-foreground"
           >
-            press@example.com
+            felanmalan@svh.se
           </Link>
         </div>
       </div>
     ),
   },
   {
-    title: "Follow us",
+    title: "Följ oss",
     content: (
       <div className="mt-3 flex gap-6 lg:gap-10">
-        <Link href="#" className="text-muted-foreground hover:text-foreground">
-          <Facebook className="size-5" />
+        <Link href="tel:+46812345678" className="text-muted-foreground hover:text-foreground">
+          <Phone className="size-5" />
         </Link>
         <Link
-          href="https://x.com/ausrobdev"
+          href="#"
           className="text-muted-foreground hover:text-foreground"
         >
-          <Twitter className="size-5" />
+          <Instagram className="size-5" />
         </Link>
         <Link href="#" className="text-muted-foreground hover:text-foreground">
           <Linkedin className="size-5" />
@@ -69,10 +69,10 @@ export default function Contact() {
     <section className="py-28 lg:py-32 lg:pt-44">
       <div className="container max-w-2xl">
         <h1 className="text-center text-2xl font-semibold tracking-tight md:text-4xl lg:text-5xl">
-          Contact us
+          Kontakta oss
         </h1>
         <p className="text-muted-foreground mt-4 text-center leading-snug font-medium lg:mx-auto">
-          Hopefully this form gets through our spam filters.
+          Vi svarar vanligtvis inom en arbetsdag.
         </p>
 
         <div className="mt-10 flex justify-between gap-8 max-sm:flex-col md:mt-14 lg:mt-20 lg:gap-12">
@@ -88,7 +88,7 @@ export default function Contact() {
 
         {/* Inquiry Form */}
         <div className="mx-auto">
-          <h2 className="mb-4 text-lg font-semibold">Inquiries</h2>
+          <h2 className="mb-4 text-lg font-semibold">Skicka ett meddelande</h2>
           <ContactForm />
         </div>
       </div>

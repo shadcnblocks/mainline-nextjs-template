@@ -2,20 +2,20 @@ import { DashedLine } from "@/components/dashed-line";
 
 const stats = [
   {
-    value: "$150M",
-    label: "Raised",
+    value: "30+",
+    label: "År i branschen",
   },
   {
-    value: "20K",
-    label: "Companies",
+    value: "2000+",
+    label: "Lägenheter",
   },
   {
-    value: "1.3B",
-    label: "Monthly transactions",
+    value: "15",
+    label: "Bostadsprojekt",
   },
   {
-    value: "1.5K",
-    label: "Connections per minute",
+    value: "98%",
+    label: "Nöjda hyresgäster",
   },
 ];
 
@@ -25,27 +25,25 @@ export function AboutHero() {
       <div className="container flex max-w-5xl flex-col justify-between gap-8 md:gap-20 lg:flex-row lg:items-center lg:gap-24 xl:gap-24">
         <div className="flex-[1.5]">
           <h1 className="text-3xl tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
-            Democratising quality software
+            Kvalitetsboende sedan 1990
           </h1>
 
           <p className="text-muted-foreground mt-5 text-2xl md:text-3xl lg:text-4xl">
-            Mainline is bringing modern software to life with AI magic.
+            Svenska Hem skapar moderna, inkluderande bostäder med omsorg om varje detalj.
           </p>
 
           <p className="text-muted-foreground mt-8 hidden max-w-lg space-y-6 text-lg text-balance md:block lg:mt-12">
-            At Mainline, we are dedicated to transforming the way teams plan,
-            execute, and deliver projects. Our mission is to provide our
-            customers with an unbeatable edge over delays, inefficiencies, and
-            disorganisation through actionable insights and seamless
-            collaboration. We’ll stop at nothing to give you the tools you need
-            to get every project across the finish line.
+            På Svenska Hem tror vi att ett hem är mer än tak över huvudet. Det
+            handlar om att skapa livskvalitet genom genomtänkta planlösningar,
+            naturliga material och hållbara lösningar. Vi är ett familjeägt
+            företag som värdesätter långsiktiga relationer – med våra boende,
+            våra partners och de områden där vi verkar.
             <br />
             <br />
-            We’re customer-obsessed — investing the time to understand every
-            aspect of your workflow so that we can help you operate better than
-            ever before. We’re all in this together because your success is our
-            success. In our history as a company, we’ve never lost a customer,
-            because when your projects succeed, so do we.
+            Vår erfarenhet sträcker sig över tre decennier av bostadsbyggande i
+            Stockholm. Vi följer alltid våra projekt från första spadtaget till
+            den dagen de nya hyresgästerna flyttar in, vilket ger oss kontroll
+            över hela kedjan och säkerställer högsta kvalitet.
           </p>
         </div>
 

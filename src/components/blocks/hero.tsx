@@ -2,10 +2,10 @@ import Image from "next/image";
 
 import {
   ArrowRight,
-  Blend,
-  ChartNoAxesColumn,
-  CircleDot,
-  Diamond,
+  Building2,
+  BadgeCheck,
+  LayoutGrid,
+  Leaf,
 } from "lucide-react";
 
 import { DashedLine } from "@/components/dashed-line";
@@ -13,24 +13,24 @@ import { Button } from "@/components/ui/button";
 
 const features = [
   {
-    title: "Tailored workflows",
-    description: "Track progress across custom issue flows for your team.",
-    icon: CircleDot,
+    title: "Kvadratsmarta planlösningar",
+    description: "Unika lägenheter där varje kvadratmeter är genomtänkt.",
+    icon: LayoutGrid,
   },
   {
-    title: "Cross-team projects",
-    description: "Collaborate across teams and departments.",
-    icon: Blend,
+    title: "30+ års erfarenhet",
+    description: "Familjeägt företag med djupa rötter i Stockholm.",
+    icon: Building2,
   },
   {
-    title: "Milestones",
-    description: "Break projects down into concrete phases.",
-    icon: Diamond,
+    title: "Kvalitet i fokus",
+    description: "Högsta kvalitet i material och utförande.",
+    icon: BadgeCheck,
   },
   {
-    title: "Progress insights",
-    description: "Track scope, velocity, and progress over time.",
-    icon: ChartNoAxesColumn,
+    title: "Hållbart boende",
+    description: "Långsiktigt ansvar för miljö och framtid.",
+    icon: Leaf,
   },
 ];
 
@@ -40,19 +40,19 @@ export const Hero = () => {
       <div className="container flex flex-col justify-between gap-8 md:gap-14 lg:flex-row lg:gap-20">
         {/* Left side - Main content */}
         <div className="flex-1">
-          <h1 className="text-foreground max-w-160 text-3xl tracking-tight md:text-4xl lg:text-5xl xl:whitespace-nowrap">
-            Mainline Next.js template
+          <h1 className="text-foreground max-w-160 text-3xl tracking-tight md:text-4xl lg:text-5xl">
+            Välkommen hem till Svenska Hem
           </h1>
 
           <p className="text-muted-foreground text-1xl mt-5 md:text-3xl">
-            Mainline is an open-source website template built with shadcn/ui,
-            Tailwind 4 & Next.js
+            Vi bygger och förvaltar unika lägenheter med kvadratsmarta
+            planlösningar i Stockholmsområdet
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4 lg:flex-nowrap">
             <Button asChild>
-              <a href="https://github.com/shadcnblocks/mainline-nextjs-template">
-                Get template
+              <a href="/lagenheter">
+                Se lediga lägenheter
               </a>
             </Button>
             <Button
@@ -61,10 +61,10 @@ export const Hero = () => {
               asChild
             >
               <a
-                href="https://shadcnblocks.com"
+                href="/about"
                 className="max-w-56 truncate text-start md:max-w-none"
               >
-                Built by shadcnblocks.com
+                Läs mer om oss
                 <ArrowRight className="stroke-3" />
               </a>
             </Button>

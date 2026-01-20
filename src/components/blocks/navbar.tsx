@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { ChevronRight, Github } from "lucide-react";
+import { ChevronRight, Phone } from "lucide-react";
 
 import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
@@ -22,26 +22,26 @@ import { cn } from "@/lib/utils";
 
 const ITEMS = [
   {
-    label: "Features",
-    href: "#features",
+    label: "Boende",
+    href: "#boende",
     dropdownItems: [
       {
-        title: "Modern product teams",
-        href: "/#feature-modern-teams",
+        title: "Hyresrätter",
+        href: "/hyresratter",
         description:
-          "Mainline is built on the habits that make the best product teams successful",
+          "Se våra lediga hyresrätter i Stockholm med kvadratsmarta planlösningar",
       },
       {
-        title: "Resource Allocation",
-        href: "/#resource-allocation",
-        description: "Mainline your resource allocation and execution",
+        title: "Bostadsrätter",
+        href: "/bostadsratter",
+        description: "Nyproducerade bostadsrätter till salu i attraktiva lägen",
       },
     ],
   },
-  { label: "About Us", href: "/about" },
-  { label: "Pricing", href: "/pricing" },
-  { label: "FAQ", href: "/faq" },
-  { label: "Contact", href: "/contact" },
+  { label: "Projekt", href: "/projekt" },
+  { label: "Om oss", href: "/about" },
+  { label: "Vanliga frågor", href: "/faq" },
+  { label: "Kontakt", href: "/contact" },
 ];
 
 export const Navbar = () => {
@@ -120,17 +120,17 @@ export const Navbar = () => {
         {/* Auth Buttons */}
         <div className="flex items-center gap-2.5">
           <ThemeToggle />
-          <Link href="/login" className="max-lg:hidden">
+          <Link href="/felanmalan" className="max-lg:hidden">
             <Button variant="outline">
-              <span className="relative z-10">Login</span>
+              <span className="relative z-10">Felanmälan</span>
             </Button>
           </Link>
           <a
-            href="https://github.com/shadcnblocks/mainline-nextjs-template"
+            href="tel:+46812345678"
             className="text-muted-foreground hover:text-foreground transition-colors"
           >
-            <Github className="size-4" />
-            <span className="sr-only">GitHub</span>
+            <Phone className="size-4" />
+            <span className="sr-only">Ring oss</span>
           </a>
 
           {/* Hamburger Menu Button (Mobile Only) */}

@@ -63,29 +63,25 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Mainline - Modern Next.js Template",
-    template: "%s | Mainline",
+    default: "Svenska Hem | Kvalitetsboende i Stockholm",
+    template: "%s | Svenska Hem",
   },
   description:
-    "A modern Next.js template built with shadcn/ui, Tailwind & MDX. Open source - MIT License.",
+    "Svenska Hem bygger och förvaltar unika lägenheter med kvadratsmarta planlösningar i Stockholmsområdet. Familjeägt sedan 1990.",
   keywords: [
-    "Next.js",
-    "nextjs template",
-    "nextjs theme",
-    "nextjs starter",
-    "shadcn template",
-    "shadcn theme",
-    "shadcn starter",
-    "tailwind template",
-    "tailwind theme",
-    "tailwind starter",
-    "mdx template",
-    "mdx theme",
-    "mdx starter",
+    "hyresrätter Stockholm",
+    "bostadsrätter Stockholm",
+    "lägenheter Stockholm",
+    "Svenska Hem",
+    "fastighetsbolag Stockholm",
+    "nyproduktion bostäder",
+    "hyra lägenhet Stockholm",
+    "kvalitetsboende",
+    "kvadratsmarta planlösningar",
   ],
-  authors: [{ name: "shadcnblocks.com" }],
-  creator: "shadcnblocks.com",
-  publisher: "shadcnblocks.com",
+  authors: [{ name: "Svenska Hem" }],
+  creator: "Svenska Hem",
+  publisher: "Svenska Hem",
   robots: {
     index: true,
     follow: true,
@@ -102,26 +98,26 @@ export const metadata: Metadata = {
     shortcut: [{ url: "/favicon/favicon.ico" }],
   },
   openGraph: {
-    title: "Mainline - Modern Next.js Template",
+    title: "Svenska Hem | Kvalitetsboende i Stockholm",
     description:
-      "A modern Next.js template built with shadcn/ui, Tailwind & MDX. Open source - MIT License.",
-    siteName: "Mainline",
+      "Svenska Hem bygger och förvaltar unika lägenheter med kvadratsmarta planlösningar i Stockholmsområdet. Familjeägt sedan 1990.",
+    siteName: "Svenska Hem",
+    locale: "sv_SE",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Mainline - Modern Next.js Template",
+        alt: "Svenska Hem - Kvalitetsboende i Stockholm",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mainline - Modern Next.js Template",
+    title: "Svenska Hem | Kvalitetsboende i Stockholm",
     description:
-      "A modern Next.js template built with shadcn/ui, Tailwind & MDX. Open source - MIT License.",
+      "Svenska Hem bygger och förvaltar unika lägenheter med kvadratsmarta planlösningar i Stockholmsområdet.",
     images: ["/og-image.jpg"],
-    creator: "@ausrobdev",
   },
 };
 
@@ -131,7 +127,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="sv" suppressHydrationWarning>
       <head>
         <script
           async
