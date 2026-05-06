@@ -17,59 +17,59 @@ import { cn } from "@/lib/utils";
 
 const items = [
   {
-    quote: "We're misusing Mainline as a CRM and it still works!",
-    author: "Amy Chase",
-    role: "PM",
-    company: "Mercury Finance",
+    quote: "We specified them across 14 floors and every door arrived within tolerance. Zero reorders.",
+    author: "Sarah Chen",
+    role: "Senior Architect",
+    company: "Gensler Associates",
     image: "/testimonials/amy-chase.webp",
   },
   {
-    quote: "I was able to replace 80% of my team with Mainline bots.",
-    author: "Jonas Kotara",
-    role: "Lead Engineer",
-    company: "Mercury Finance",
+    quote: "The documentation pack alone saved us two weeks on the compliance handover.",
+    author: "Mark Davidson",
+    role: "Project Manager",
+    company: "Brookfield Construction",
     image: "/testimonials/jonas-kotara.webp",
   },
   {
-    quote: "Founder Mode is hard enough without having a really nice PM app.",
-    author: "Kevin Yam",
-    role: "Founder",
-    company: "Mercury Finance",
+    quote: "First manufacturer who dispatched doors with install guides already laminated to the packaging.",
+    author: "James O'Brien",
+    role: "Site Foreman",
+    company: "Hansen Yuncken",
     image: "/testimonials/kevin-yam.webp",
   },
   {
-    quote: "I can use the tool as a substitute from my PM.",
-    author: "Kundo Marta",
-    role: "Founder",
-    company: "Mercury Finance",
+    quote: "We switched after our previous supplier failed a random audit. Haven't looked back.",
+    author: "Priya Nair",
+    role: "Facility Manager",
+    company: "Westfield Group",
     image: "/testimonials/kundo-marta.webp",
   },
   {
-    quote: "We're misusing Mainline as a CRM and it still works!",
-    author: "Amy Chase",
-    role: "PM",
-    company: "Mercury Finance",
+    quote: "We specified them across 14 floors and every door arrived within tolerance. Zero reorders.",
+    author: "Sarah Chen",
+    role: "Senior Architect",
+    company: "Gensler Associates",
     image: "/testimonials/amy-chase.webp",
   },
   {
-    quote: "I was able to replace 80% of my team with Mainline bots.",
-    author: "Jonas Kotara",
-    role: "Lead Engineer",
-    company: "Mercury Finance",
+    quote: "The documentation pack alone saved us two weeks on the compliance handover.",
+    author: "Mark Davidson",
+    role: "Project Manager",
+    company: "Brookfield Construction",
     image: "/testimonials/jonas-kotara.webp",
   },
   {
-    quote: "Founder Mode is hard enough without having a really nice PM app.",
-    author: "Kevin Yam",
-    role: "Founder",
-    company: "Mercury Finance",
+    quote: "First manufacturer who dispatched doors with install guides already laminated to the packaging.",
+    author: "James O'Brien",
+    role: "Site Foreman",
+    company: "Hansen Yuncken",
     image: "/testimonials/kevin-yam.webp",
   },
   {
-    quote: "I can use the tool as a substitute from my PM.",
-    author: "Kundo Marta",
-    role: "Founder",
-    company: "Mercury Finance",
+    quote: "We switched after our previous supplier failed a random audit. Haven't looked back.",
+    author: "Priya Nair",
+    role: "Facility Manager",
+    company: "Westfield Group",
     image: "/testimonials/kundo-marta.webp",
   },
 ];
@@ -87,15 +87,15 @@ export const Testimonials = ({
         <div className="container">
           <div className="space-y-4">
             <h2 className="text-2xl tracking-tight md:text-4xl lg:text-5xl">
-              Trusted by product builders
+              Trusted on projects that matter
             </h2>
             <p className="text-muted-foreground max-w-md leading-snug">
-              Mainline is built on the habits that make the best product teams
-              successful: staying focused, moving quickly, and always aiming for
-              high-quality work.
+              Architects, contractors, and facility owners trust our door systems
+              for projects where compliance, quality, and delivery timelines are
+              non-negotiable.
             </p>
             <Button variant="outline" className="shadow-md">
-              Read our Customer Stories <ArrowRight className="size-4" />
+              View Project Case Studies <ArrowRight className="size-4" />
             </Button>
           </div>
 

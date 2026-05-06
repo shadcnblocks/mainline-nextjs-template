@@ -18,15 +18,15 @@ const About = () => {
         />
 
         <TextSection
-          title="The team"
+          title="Our facility"
           paragraphs={[
-            "We started building Mainline in 2019 and launched in 2022. Every endpoint has been designed from the ground up — with no technical debt or legacy systems. We are purpose-built to power project management innovation for the next hundred years.",
-            "We are 100% founder and team-owned, profitable, and we keep our team lean. Over time, this page will become more polished, but for now, we're focused on delivering for developers.",
-            "If you're interested in building the future of PM, check out our open roles below.",
+            "Our manufacturing facility houses dedicated production lines for core construction, edge banding, seal installation, hardware preparation, and finishing. Every stage is quality-gated — no door progresses until the previous stage passes inspection.",
+            "We invested in vertical integration early so that we control the full chain from raw material to dispatched product. This means fewer variables, tighter tolerances, and faster response times when projects change scope.",
+            "If you'd like to see how your doors are made, we welcome site visits from architects, specifiers, and project teams.",
           ]}
           ctaButton={{
-            href: "/careers",
-            text: "View open roles",
+            href: "/contact",
+            text: "Arrange a factory visit",
           }}
         />
       </div>
@@ -35,8 +35,8 @@ const About = () => {
       <div className="flex flex-col gap-8 lg:gap-16 xl:gap-20">
         <TextSection
           paragraphs={[
-            "At Mainline, we are dedicated to transforming the way teams plan, execute, and deliver projects. Our mission is to provide our customers with an unbeatable edge over delays, inefficiencies, and disorganisation through actionable insights and seamless collaboration. We'll stop at nothing to give you the tools you need to get every project across the finish line.",
-            "We're customer-obsessed — investing the time to understand every aspect of your workflow so that we can help you operate better than ever before. We're all in this together because your success is our success. In our history as a company, we've never lost a customer, because when your projects succeed, so do we.",
+            "At CoreShield, we believe that fire safety is not a checkbox — it's a responsibility carried by every person who specifies, manufactures, installs, and maintains a fire door. Our role in that chain is to make sure the door itself is never the weak link.",
+            "We manufacture every door to the project specification — not to a catalogue. That means custom dimensions, hardware configurations, seal packages, and finish options are standard practice, not special requests. When a door arrives on site, it should fit the opening, meet the rating, and carry the documentation to prove it.",
           ]}
         />
         <ImageSection

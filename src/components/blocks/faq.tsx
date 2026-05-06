@@ -10,52 +10,52 @@ import { cn } from "@/lib/utils";
 
 const categories = [
   {
-    title: "Support",
+    title: "Fire ratings & certification",
     questions: [
       {
-        question: "How do I update my account without breaking my laptop?",
+        question: "What fire rating levels do you offer?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "We manufacture doors rated from FRL 30/30 through to FRL 240/240, tested and certified to AS 1905.1, BS 476 Part 22, and UL 10C standards. Each door ships with a certificate of compliance referencing the specific test report.",
       },
       {
-        question: "Is support free, or do I need to Google everything?",
+        question: "How are your doors tested?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Every door design is tested in an accredited furnace facility under full fire conditions for its rated duration. We test to failure — meaning we verify performance beyond the rated time — so that our certifications reflect real-world reliability, not minimum thresholds.",
       },
       {
-        question: "Are you going to be subsumed by AI?",
+        question: "Can I get a door certified for both fire and acoustic ratings?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Yes. Our Professional and Sovereign series doors can be manufactured with combined fire and acoustic ratings. Acoustic performance up to Rw 45 is available depending on the door configuration and seal package.",
       },
     ],
   },
   {
-    title: "Your account",
+    title: "Ordering & customisation",
     questions: [
       {
-        question: "Is support free, or do I need to Google everything?",
+        question: "Can doors be manufactured to custom dimensions?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Yes. All series support custom height and width within the certified dimensional range. Our Professional and Sovereign series support oversized and double-leaf configurations. We manufacture to your project specification — no site trimming required.",
       },
       {
-        question: "Are you going to be subsumed by AI?",
+        question: "What is the typical lead time?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Standard series doors ship within 3–4 weeks from order confirmation. Custom configurations and large project orders are scheduled on a per-project basis — typically 4–8 weeks depending on specification complexity.",
       },
     ],
   },
   {
-    title: "Other questions",
+    title: "Installation & compliance",
     questions: [
       {
-        question: "Is support free, or do I need to Google everything?",
+        question: "Do you provide installation documentation?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Every order includes a compliance certificate, a detailed installation guide, and a maintenance schedule. For project orders, we also provide a handover documentation pack formatted for building certifier review.",
       },
       {
-        question: "Are you going to be subsumed by AI?",
+        question: "Who installs the doors?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Installation should be carried out by a licensed contractor or certified installer. We can recommend approved installers in your region, or provide technical support to your nominated installer.",
       },
     ],
   },

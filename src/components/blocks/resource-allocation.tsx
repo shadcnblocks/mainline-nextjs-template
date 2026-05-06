@@ -6,13 +6,13 @@ import { cn } from "@/lib/utils";
 
 const topItems = [
   {
-    title: "Reusable issue templates.",
+    title: "Certified core construction.",
     description:
-      "Draft lightning-fast documents with our Smart Instructions and Templates.",
+      "Solid core, mineral core, and honeycomb options — each tested and rated for specific fire resistance periods from 30 to 240 minutes.",
     images: [
       {
         src: "/resource-allocation/templates.webp",
-        alt: "Issue template interface",
+        alt: "Fire door core cross-section",
         width: 495,
         height: 186,
       },
@@ -22,37 +22,37 @@ const topItems = [
     fade: [""],
   },
   {
-    title: "Simplify your stack.",
-    description: "No more Confluence, SharePoint, or Microsoft Word.",
+    title: "Integrated seal systems.",
+    description: "Intumescent strips, acoustic perimeter seals, and automatic drop seals — factory-fitted for guaranteed performance.",
     images: [
-      { src: "/logos/jira.svg", alt: "Jira logo", width: 48, height: 48 },
-      { src: "/logos/excel.svg", alt: "Excel logo", width: 48, height: 48 },
+      { src: "/logos/jira.svg", alt: "Intumescent strip", width: 48, height: 48 },
+      { src: "/logos/excel.svg", alt: "Drop seal", width: 48, height: 48 },
       {
         src: "/logos/notion.svg",
-        alt: "Notion logo",
+        alt: "Smoke seal",
         width: 48,
         height: 48,
       },
-      { src: "/logos/word.svg", alt: "Word logo", width: 48, height: 48 },
+      { src: "/logos/word.svg", alt: "Acoustic seal", width: 48, height: 48 },
       {
         src: "/logos/monday.svg",
-        alt: "Monday logo",
+        alt: "Hinge",
         width: 48,
         height: 48,
       },
       {
         src: "/logos/drive.svg",
-        alt: "Google Drive logo",
+        alt: "Door closer",
         width: 48,
         height: 48,
       },
       {
         src: "/logos/jira.svg",
-        alt: "Jira logo",
+        alt: "Lock mechanism",
         width: 48,
         height: 48,
       },
-      { src: "/logos/asana.svg", alt: "Asana logo", width: 48, height: 48 },
+      { src: "/logos/asana.svg", alt: "Threshold seal", width: 48, height: 48 },
     ],
     className:
       "flex-1 [&>.title-container]:mb-5 md:[&>.title-container]:mb-8 md:[&>.title-container]:translate-x-2 xl:[&>.title-container]:translate-x-4 [&>.title-container]:translate-x-0",
@@ -62,13 +62,13 @@ const topItems = [
 
 const bottomItems = [
   {
-    title: "Graveyard it.",
+    title: "Tested to failure.",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do.",
+      "Every door design is furnace-tested to its rated duration and beyond, so the certification reflects real-world reliability.",
     images: [
       {
         src: "/resource-allocation/graveyard.webp",
-        alt: "Graveyard interface",
+        alt: "Fire test furnace",
         width: 305,
         height: 280,
       },
@@ -78,13 +78,13 @@ const bottomItems = [
     fade: ["bottom"],
   },
   {
-    title: "Task discussions.",
+    title: "Project documentation.",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
+      "Compliance certificates, installation guides, and maintenance schedules ship with every order — ready for handover.",
     images: [
       {
         src: "/resource-allocation/discussions.webp",
-        alt: "Task discussions interface",
+        alt: "Compliance documentation",
         width: 320,
         height: 103,
       },
@@ -94,13 +94,13 @@ const bottomItems = [
     fade: [""],
   },
   {
-    title: "Notifications.",
+    title: "Dispatch quality checks.",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
+      "Final inspection before dispatch — dimensions, hardware, seals, finish, and labelling verified against the project schedule.",
     images: [
       {
         src: "/resource-allocation/notifications.webp",
-        alt: "Notifications interface",
+        alt: "Quality inspection process",
         width: 305,
         height: 280,
       },
@@ -119,7 +119,7 @@ export const ResourceAllocation = () => {
     >
       <div className="">
         <h2 className="container text-center text-3xl tracking-tight text-balance sm:text-4xl md:text-5xl lg:text-6xl">
-          Mainline your resource allocation and execution
+          What Makes Every Opening Ready
         </h2>
 
         <div className="mt-8 md:mt-12 lg:mt-20">

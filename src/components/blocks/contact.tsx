@@ -9,12 +9,14 @@ import { DashedLine } from "@/components/dashed-line";
 
 const contactInfo = [
   {
-    title: "Corporate office",
+    title: "Head office & factory",
     content: (
       <p className="text-muted-foreground mt-3">
-        1 Carlsberg Close
+        CoreShield Pty Ltd
         <br />
-        1260 Hillview, Australia
+        42 Industrial Drive
+        <br />
+        Smithfield NSW 2164, Australia
       </p>
     ),
   },
@@ -23,21 +25,21 @@ const contactInfo = [
     content: (
       <div className="mt-3">
         <div>
-          <p className="">Careers</p>
+          <p className="">Project quotes</p>
           <Link
-            href="mailto:careers@example.com"
+            href="mailto:quotes@coreshield.com.au"
             className="text-muted-foreground hover:text-foreground"
           >
-            careers@example.com
+            quotes@coreshield.com.au
           </Link>
         </div>
         <div className="mt-1">
-          <p className="">Press</p>
+          <p className="">Technical support</p>
           <Link
-            href="mailto:press@example.com"
+            href="mailto:technical@coreshield.com.au"
             className="text-muted-foreground hover:text-foreground"
           >
-            press@example.com
+            technical@coreshield.com.au
           </Link>
         </div>
       </div>
@@ -51,7 +53,7 @@ const contactInfo = [
           <Facebook className="size-5" />
         </Link>
         <Link
-          href="https://x.com/ausrobdev"
+          href="#"
           className="text-muted-foreground hover:text-foreground"
         >
           <Twitter className="size-5" />
@@ -72,7 +74,7 @@ export default function Contact() {
           Contact us
         </h1>
         <p className="text-muted-foreground mt-4 text-center leading-snug font-medium lg:mx-auto">
-          Hopefully this form gets through our spam filters.
+          Request a quote, arrange a factory visit, or ask a technical question.
         </p>
 
         <div className="mt-10 flex justify-between gap-8 max-sm:flex-col md:mt-14 lg:mt-20 lg:gap-12">
