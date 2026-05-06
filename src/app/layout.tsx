@@ -63,29 +63,26 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Mainline - Modern Next.js Template",
-    template: "%s | Mainline",
+    default: "CoreShield — Make Every Opening Ready",
+    template: "%s | CoreShield",
   },
   description:
-    "A modern Next.js template built with shadcn/ui, Tailwind & MDX. Open source - MIT License.",
+    "Fire-rated door systems engineered for safer passages, cleaner approvals, and confident project handovers. Custom manufacturing for architects, contractors, and builders.",
   keywords: [
-    "Next.js",
-    "nextjs template",
-    "nextjs theme",
-    "nextjs starter",
-    "shadcn template",
-    "shadcn theme",
-    "shadcn starter",
-    "tailwind template",
-    "tailwind theme",
-    "tailwind starter",
-    "mdx template",
-    "mdx theme",
-    "mdx starter",
+    "fire rated doors",
+    "fire door manufacturer",
+    "fire rated door systems",
+    "commercial fire doors",
+    "residential fire doors",
+    "fire door supplier",
+    "AS 1905.1",
+    "fire safety doors",
+    "acoustic rated doors",
+    "custom fire doors",
   ],
-  authors: [{ name: "shadcnblocks.com" }],
-  creator: "shadcnblocks.com",
-  publisher: "shadcnblocks.com",
+  authors: [{ name: "CoreShield" }],
+  creator: "CoreShield",
+  publisher: "CoreShield",
   robots: {
     index: true,
     follow: true,
@@ -102,26 +99,26 @@ export const metadata: Metadata = {
     shortcut: [{ url: "/favicon/favicon.ico" }],
   },
   openGraph: {
-    title: "Mainline - Modern Next.js Template",
+    title: "CoreShield — Make Every Opening Ready",
     description:
-      "A modern Next.js template built with shadcn/ui, Tailwind & MDX. Open source - MIT License.",
-    siteName: "Mainline",
+      "Fire-rated door systems engineered for safer passages, cleaner approvals, and confident project handovers. Custom manufacturing for architects, contractors, and builders.",
+    siteName: "CoreShield",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Mainline - Modern Next.js Template",
+        alt: "CoreShield — Make Every Opening Ready",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mainline - Modern Next.js Template",
+    title: "CoreShield — Make Every Opening Ready",
     description:
-      "A modern Next.js template built with shadcn/ui, Tailwind & MDX. Open source - MIT License.",
+      "Fire-rated door systems engineered for safer passages, cleaner approvals, and confident project handovers. Custom manufacturing for architects, contractors, and builders.",
     images: ["/og-image.jpg"],
-    creator: "@ausrobdev",
+    creator: "@coreshield",
   },
 };
 

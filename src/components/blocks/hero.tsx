@@ -2,10 +2,10 @@ import Image from "next/image";
 
 import {
   ArrowRight,
-  Blend,
-  ChartNoAxesColumn,
-  CircleDot,
-  Diamond,
+  ClipboardCheck,
+  Flame,
+  Ruler,
+  ShieldCheck,
 } from "lucide-react";
 
 import { DashedLine } from "@/components/dashed-line";
@@ -13,24 +13,24 @@ import { Button } from "@/components/ui/button";
 
 const features = [
   {
-    title: "Tailored workflows",
-    description: "Track progress across custom issue flows for your team.",
-    icon: CircleDot,
+    title: "Fire-rated up to 240 minutes",
+    description: "Tested and certified to AS 1905.1, BS 476, and UL standards.",
+    icon: Flame,
   },
   {
-    title: "Cross-team projects",
-    description: "Collaborate across teams and departments.",
-    icon: Blend,
+    title: "Custom-sized to project spec",
+    description: "Manufactured to exact dimensions — no site trimming, no warranty voids.",
+    icon: Ruler,
   },
   {
-    title: "Milestones",
-    description: "Break projects down into concrete phases.",
-    icon: Diamond,
+    title: "Specification-ready dispatch",
+    description: "Every door ships with compliance documentation and install guides.",
+    icon: ClipboardCheck,
   },
   {
-    title: "Progress insights",
-    description: "Track scope, velocity, and progress over time.",
-    icon: ChartNoAxesColumn,
+    title: "Acoustic & smoke performance",
+    description: "Integrated seals for sound reduction and smoke containment.",
+    icon: ShieldCheck,
   },
 ];
 
@@ -41,18 +41,18 @@ export const Hero = () => {
         {/* Left side - Main content */}
         <div className="flex-1">
           <h1 className="text-foreground max-w-160 text-3xl tracking-tight md:text-4xl lg:text-5xl xl:whitespace-nowrap">
-            Mainline Next.js template
+            Make Every Opening Ready.
           </h1>
 
           <p className="text-muted-foreground text-1xl mt-5 md:text-3xl">
-            Mainline is an open-source website template built with shadcn/ui,
-            Tailwind 4 & Next.js
+            Fire-rated door systems for safer passages, cleaner approvals, and
+            confident project handovers.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4 lg:flex-nowrap">
             <Button asChild>
-              <a href="https://github.com/shadcnblocks/mainline-nextjs-template">
-                Get template
+              <a href="/contact">
+                Request a Project Quote
               </a>
             </Button>
             <Button
@@ -61,10 +61,10 @@ export const Hero = () => {
               asChild
             >
               <a
-                href="https://shadcnblocks.com"
+                href="/#feature-modern-teams"
                 className="max-w-56 truncate text-start md:max-w-none"
               >
-                Built by shadcnblocks.com
+                Explore Door Systems
                 <ArrowRight className="stroke-3" />
               </a>
             </Button>
@@ -104,7 +104,7 @@ export const Hero = () => {
         <div className="relative h-[793px] w-full">
           <Image
             src="/hero.webp"
-            alt="hero"
+            alt="Fire rated door installed in a modern building corridor"
             fill
             className="rounded-2xl object-cover object-left-top shadow-lg max-lg:rounded-tr-none"
           />
@@ -113,3 +113,4 @@ export const Hero = () => {
     </section>
   );
 };
+

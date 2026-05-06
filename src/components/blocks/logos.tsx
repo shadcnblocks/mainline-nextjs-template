@@ -16,70 +16,70 @@ type Company = {
 export const Logos = () => {
   const topRowCompanies = [
     {
-      name: "Mercury",
+      name: "AS 1905.1",
       logo: "/logos/mercury.svg",
       width: 143,
       height: 26,
-      href: "https://mercury.com",
+      href: "#",
     },
     {
-      name: "Watershed",
+      name: "BS 476",
       logo: "/logos/watershed.svg",
       width: 154,
       height: 31,
-      href: "https://watershed.com",
+      href: "#",
     },
     {
-      name: "Retool",
+      name: "UL Certified",
       logo: "/logos/retool.svg",
       width: 113,
       height: 22,
-      href: "https://retool.com",
+      href: "#",
     },
     {
-      name: "Descript",
+      name: "ISO 9001",
       logo: "/logos/descript.svg",
       width: 112,
       height: 27,
-      href: "https://descript.com",
+      href: "#",
     },
   ];
 
   const bottomRowCompanies = [
     {
-      name: "Perplexity",
+      name: "NFPA",
       logo: "/logos/perplexity.svg",
       width: 141,
       height: 32,
-      href: "https://perplexity.com",
+      href: "#",
     },
     {
-      name: "Monzo",
+      name: "BCA Compliant",
       logo: "/logos/monzo.svg",
       width: 104,
       height: 18,
-      href: "https://monzo.com",
+      href: "#",
     },
     {
-      name: "Ramp",
+      name: "Green Building Council",
       logo: "/logos/ramp.svg",
       width: 105,
       height: 28,
-      href: "https://ramp.com",
+      href: "#",
     },
     {
-      name: "Raycast",
+      name: "Intertek",
       logo: "/logos/raycast.svg",
       width: 128,
       height: 33,
-      href: "https://raycast.com",
+      href: "#",
     },
     {
-      name: "Arc",
+      name: "SAI Global",
       logo: "/logos/arc.svg",
       width: 90,
       height: 28,
-      href: "https://arc.com",
+      href: "#",
     },
   ];
 
@@ -88,10 +88,10 @@ export const Logos = () => {
       <div className="container space-y-10 lg:space-y-16">
         <div className="text-center">
           <h2 className="mb-4 text-xl text-balance md:text-2xl lg:text-3xl">
-            Powering the world's best product teams.
+            Tested. Certified. Trusted by the industry.
             <br className="max-md:hidden" />
             <span className="text-muted-foreground">
-              From next-gen startups to established enterprises.
+              Compliant with international fire safety standards.
             </span>
           </h2>
         </div>

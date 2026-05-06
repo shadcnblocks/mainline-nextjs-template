@@ -9,16 +9,16 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const items = [
   {
-    title: "Purpose-built for product development",
-    image: "/features/triage-card.svg",
+    title: "Purpose-built for commercial buildings",
+    image: "/features/commercial-door.png",
   },
   {
-    title: "Manage projects end-to-end",
-    image: "/features/cycle-card.svg",
+    title: "Residential fire compartment doors",
+    image: "/features/residential-door.png",
   },
   {
-    title: "Build momentum and healthy habits",
-    image: "/features/overview-card.svg",
+    title: "Specialty doors for industrial zones",
+    image: "/features/industrial-door.png",
   },
 ];
 
@@ -37,12 +37,12 @@ export const Features = () => {
         {/* Content */}
         <div className="mx-auto mt-10 grid max-w-4xl items-center gap-3 md:gap-0 lg:mt-24 lg:grid-cols-2">
           <h2 className="text-2xl tracking-tight md:text-4xl lg:text-5xl">
-            Made for modern product teams
+            Engineered for Every Application
           </h2>
           <p className="text-muted-foreground leading-snug">
-            Mainline is built on the habits that make the best product teams
-            successful: staying focused, moving quickly, and always aiming for
-            high-quality work.
+            From high-rise corridors to residential fire compartments — every
+            door system is purpose-built, tested, and certified for its specific
+            application.
           </p>
         </div>
 

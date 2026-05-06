@@ -11,40 +11,40 @@ import { cn } from "@/lib/utils";
 
 const plans = [
   {
-    name: "Free",
-    monthlyPrice: "$0",
-    yearlyPrice: "$0",
-    description: "Free for everyone",
+    name: "Essential",
+    monthlyPrice: "FRL 30/30",
+    yearlyPrice: "FRL 60/60",
+    description: "Residential & light commercial",
     features: [
-      "Unlimited members",
-      "2 teams",
-      "500 issues",
-      "Slack and Github integrations",
+      "30 or 60 minute fire rating",
+      "Standard dimensions up to 2340 × 920mm",
+      "Solid core construction",
+      "Intumescent seal included",
     ],
   },
   {
-    name: "Startup",
-    monthlyPrice: "$8",
-    yearlyPrice: "$6",
+    name: "Professional",
+    monthlyPrice: "FRL 60/60",
+    yearlyPrice: "FRL 120/120",
     features: [
-      "All free plan features and...",
-      "Mainline AI",
-      "Unlimited teams",
-      "Unlimited issues and file uploads",
-      "Mainline Insights",
-      "Admin roles",
+      "All Essential series features and...",
+      "60 or 120 minute fire rating",
+      "Custom dimensions available",
+      "Acoustic rating up to Rw 35",
+      "Smoke seal integration",
+      "Project documentation pack",
     ],
   },
   {
-    name: "Enterprise",
-    monthlyPrice: "$8",
-    yearlyPrice: "$6",
+    name: "Sovereign",
+    monthlyPrice: "FRL 120/120",
+    yearlyPrice: "FRL 240/240",
     features: [
-      "All free plan features and...",
-      "Mainline AI",
-      "Supermainline AGI",
-      "Free daily catered lunch",
-      "random HIPPA audits",
+      "All Professional series features and...",
+      "Up to 240 minute fire rating",
+      "Oversized and double-leaf configurations",
+      "Full acoustic + smoke + fire package",
+      "Dedicated project engineer",
     ],
   },
 ];
@@ -57,12 +57,12 @@ export const Pricing = ({ className }: { className?: string }) => {
       <div className="container max-w-5xl">
         <div className="space-y-4 text-center">
           <h2 className="text-2xl tracking-tight md:text-4xl lg:text-5xl">
-            Pricing
+            Door Systems by Series
           </h2>
           <p className="text-muted-foreground mx-auto max-w-xl leading-snug text-balance">
-            Use Mainline for free with your whole team. Upgrade to enable
-            unlimited issues, enhanced security controls, and additional
-            features.
+            Every series is manufactured to meet specific fire rating, acoustic,
+            and dimensional requirements. Select a starting point — every door is
+            customised to your project specification.
           </p>
         </div>
 
@@ -71,7 +71,7 @@ export const Pricing = ({ className }: { className?: string }) => {
             <Card
               key={plan.name}
               className={`${
-                plan.name === "Startup"
+                plan.name === "Professional"
                   ? "outline-primary origin-top outline-4"
                   : ""
               }`}
@@ -82,24 +82,23 @@ export const Pricing = ({ className }: { className?: string }) => {
                   <div className="space-y-1">
                     <div className="text-muted-foreground text-lg font-medium">
                       {isAnnual ? plan.yearlyPrice : plan.monthlyPrice}{" "}
-                      {plan.name !== "Free" && (
-                        <span className="text-muted-foreground">
-                          per user/
-                          {isAnnual ? "year" : "month"}
+                      {plan.name !== "Essential" && (
+                        <span className="text-muted-foreground text-sm font-normal">
+                          Max Rating
                         </span>
                       )}
                     </div>
                   </div>
                 </div>
 
-                {plan.name !== "Free" ? (
+                {plan.name !== "Essential" ? (
                   <div className="flex items-center gap-2">
                     <Switch
                       checked={isAnnual}
                       onCheckedChange={() => setIsAnnual(!isAnnual)}
-                      aria-label="Toggle annual billing"
+                      aria-label="Toggle maximum rating"
                     />
-                    <span className="text-sm font-medium">Billed annually</span>
+                    <span className="text-sm font-medium">View maximum rating</span>
                   </div>
                 ) : (
                   <span className="text-muted-foreground text-sm">
@@ -121,9 +120,9 @@ export const Pricing = ({ className }: { className?: string }) => {
 
                 <Button
                   className="w-fit"
-                  variant={plan.name === "Startup" ? "default" : "outline"}
+                  variant={plan.name === "Professional" ? "default" : "outline"}
                 >
-                  Get started
+                  Request Specification
                 </Button>
               </CardContent>
             </Card>

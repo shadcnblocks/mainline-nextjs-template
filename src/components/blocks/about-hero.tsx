@@ -2,20 +2,20 @@ import { DashedLine } from "@/components/dashed-line";
 
 const stats = [
   {
-    value: "$150M",
-    label: "Raised",
+    value: "25+",
+    label: "Years of manufacturing",
   },
   {
-    value: "20K",
-    label: "Companies",
+    value: "12,000+",
+    label: "Projects delivered",
   },
   {
-    value: "1.3B",
-    label: "Monthly transactions",
+    value: "240 min",
+    label: "Maximum fire rating",
   },
   {
-    value: "1.5K",
-    label: "Connections per minute",
+    value: "100%",
+    label: "Tested and certified",
   },
 ];
 
@@ -25,27 +25,26 @@ export function AboutHero() {
       <div className="container flex max-w-5xl flex-col justify-between gap-8 md:gap-20 lg:flex-row lg:items-center lg:gap-24 xl:gap-24">
         <div className="flex-[1.5]">
           <h1 className="text-3xl tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
-            Democratising quality software
+            Protection starts at the opening.
           </h1>
 
           <p className="text-muted-foreground mt-5 text-2xl md:text-3xl lg:text-4xl">
-            Mainline is bringing modern software to life with AI magic.
+            We engineer fire-rated door systems that give buildings, and the
+            people inside them, time when it matters most.
           </p>
 
           <p className="text-muted-foreground mt-8 hidden max-w-lg space-y-6 text-lg text-balance md:block lg:mt-12">
-            At Mainline, we are dedicated to transforming the way teams plan,
-            execute, and deliver projects. Our mission is to provide our
-            customers with an unbeatable edge over delays, inefficiencies, and
-            disorganisation through actionable insights and seamless
-            collaboration. We’ll stop at nothing to give you the tools you need
-            to get every project across the finish line.
+            Founded in 2001, CoreShield manufactures fire-rated door systems for
+            commercial, residential, and industrial buildings across Australia
+            and the Asia-Pacific region. Every door we produce is designed to
+            meet or exceed the fire resistance levels specified by the project —
+            and tested to prove it.
             <br />
             <br />
-            We’re customer-obsessed — investing the time to understand every
-            aspect of your workflow so that we can help you operate better than
-            ever before. We’re all in this together because your success is our
-            success. In our history as a company, we’ve never lost a customer,
-            because when your projects succeed, so do we.
+            We are a privately held, Australian-owned manufacturer. Our facility
+            handles everything from core construction to final quality inspection
+            under one roof, so that every door that leaves our factory carries
+            our full warranty and certification.
           </p>
         </div>
 
